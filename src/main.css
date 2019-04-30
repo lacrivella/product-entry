@@ -3,15 +3,27 @@
 body {
     font-family: 'Inconsolata', monospace;
     font-size: 1.17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auot;
     text-align: center;
     background-color: #96362F;
     color: rgb(245, 244, 244);
 }
-/* #pokedex-info {
-    background-color: #212A2F;
-    opacity: .50;
-    padding: 40px;
-} */
+
+#pokedex-info {
+    /* background-color: #212A2F;
+    opacity: .70; */
+    padding: 30px 40px;
+}
+
+.pokedex-wrapper {
+    background-image: url('../assets/redbackground.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
 
 h1, h2 {
     font-family: 'Russo One', sans-serif;
@@ -23,10 +35,14 @@ h2 {
     padding: 5px; 
     margin-top: -10px;
     margin-bottom: -5px;
+    opacity: 1;
 }
 
 fieldset {
     display: inline-block;
+    text-align: left;
+    background-color: #212A2F;
+    opacity: .75;
 }
 
 #description {

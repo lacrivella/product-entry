@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Russo+One');
+
+body {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    background-color: #96362F;
+}
+
+h1, h2 {
+    font-family: 'Russo One', sans-serif;
+}

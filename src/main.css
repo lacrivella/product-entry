@@ -7,6 +7,11 @@ body {
     background-color: #96362F;
     color: rgb(245, 244, 244);
 }
+/* #pokedex-info {
+    background-color: #212A2F;
+    opacity: .50;
+    padding: 40px;
+} */
 
 h1, h2 {
     font-family: 'Russo One', sans-serif;
@@ -22,7 +27,6 @@ h2 {
 
 fieldset {
     display: inline-block;
-    text-align: start;
 }
 
 #description {

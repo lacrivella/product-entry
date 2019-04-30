@@ -4,5 +4,6 @@ const pokedex = document.getElementById('pokedex-info');
 // adding event listeners
 pokedex.addEventListener('submit', (event) => {
     event.preventDefault();
-    const pokedexData = new FormData(pokedex);
+    console.log('yo');
+    // const pokedexData = new FormData(pokedex);
 });

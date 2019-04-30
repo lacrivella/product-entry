@@ -14,7 +14,8 @@ function getPokedex(pokedexData) {
         secondary: pokedexData.getAll('secondary'),
         hasBattle: hasBattle,
         wins: wins,
-        evolving: evolving };
+        evolving: evolving 
+    };
 
     return applicant;
 }
@@ -26,7 +27,7 @@ test('create applicant from data', function(assert) {
         nickname: 'Pika',
         primary: 'Fire',
         secondary: ['ghost'],
-        battle: true,
+        hasBattle: true,
         wins: 2,
         evolving: 5,
     };

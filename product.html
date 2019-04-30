@@ -9,89 +9,102 @@
 </head>
 <body>
     <main>
-        <!-- section for pokmone info and h2 for name and type? -->
-        <section>
-            <h2>About Your Pokemon</h2>
-            <p>
-                <label>Pokemon Name:</label>
-                <input type="text" name="name" id="name" placeholder="pokemon name" required>
-            </p>
-            <p>
-                <label>Pokemon Nickname:</label>
-                <input type="text" name="nickname" id="nickname" placeholder="pokemon's nickname">
-            </p>
-            <p>
-                <label>Brief Description of Pokemon:</label>
-                <textarea name="description" id="description" placeholder="describe height, weight, and features"></textarea>
-            </p>
-        </section>
-        <section>
-            <h2>Pokemon Type</h2>
-            <p>
-                <label>Primary Type</label>
-                <select id="primary" name="primary" required>
-                    <option value="" hidden disabled selected>select a primary type</option>
-                    <option value="fire">Fire</option>
-                    <option value="water">Water</option>
-                    <option value="grass">Grass</option>
-                    <option value="electric">Electric</option>
-                    <option value="psychic">Psychic</option>
-                    <option value="normal">Normal</option>
-                    <option value="rock">Rock</option>
-                </select>
-            </p>
-            <p>
-                <fieldset>
-                    <legend>Secondary types</legend>
+        <form id="pokedex-info">
+            <section>
+                <h2>About Your Pokemon</h2>
+                <p>
+                    <label>Pokemon Name:</label>
+                    <input type="text" name="name" id="name" placeholder="pokemon name" required>
+                </p>
+                <p>
+                    <label>Pokemon Nickname:</label>
+                    <input type="text" name="nickname" id="nickname" placeholder="pokemon's nickname">
+                </p>
+                <p>
+                    <label>Brief Description of Pokemon:</label>
+                    <p>
+                    <textarea name="description" id="description" placeholder="describe height, weight, and features"></textarea>
+                    </p>
+                </p>
+            </section>
+            <section>
+                <h2>Pokemon Type</h2>
+                <p>
+                    <label>Primary Type</label>
+                    <select id="primary" name="primary" required>
+                        <option value="" hidden disabled selected>select a primary type</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                        <option value="grass">Grass</option>
+                        <option value="electric">Electric</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="normal">Normal</option>
+                        <option value="rock">Rock</option>
+                    </select>
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Secondary types</legend>
+                        <div>
+                            <input name="secondary" value="ghost" type="checkbox" id="ghost">
+                            <label for="ghost">Ghost</label>
+                        </div>
+                        <div>
+                            <input name="secondary" value="flying" type="checkbox" id="flying">
+                            <label for="flying">Flying</label>
+                        </div>
+                        <div>
+                            <input name="secondary" value="poison" type="checkbox" id="poison">
+                            <label for="poison">Poison</label>
+                        </div>
+                        <div>
+                            <input name="secondary" value="fairy" type="checkbox" id="fairy">
+                            <label for="fairy">Fairy</label>
+                        </div>
+                        <div>
+                            <input name="secondary" value="bug" type="checkbox" id="bug">
+                            <label for="bug">Bug</label>
+                        </div>
+                        <div>
+                            <input name="secondary" value="dragon" type="checkbox" id="dragon">
+                            <label for="dragon">Dragon</label>
+                        </div>
+                        <div>
+                            <input name="secondary" value="ice" type="checkbox" id="ice">
+                            <label for="ice">Ice</label>
+                        </div>
+                    </fieldset>
+                </p>
+            </section>
+            <section>
+                <h2>Battles</h2>
+                <fieldset id="battlefield">
+                    <legend>
+                        Has this pokemon been in a battle?
+                    </legend>
                     <div>
-                        <input name="secondary" value="ghost" type="checkbox" id="ghost">
-                        <label for="ghost">Ghost</label>
+                        <input type="radio" id="yes" value="yes" name="battle" required>
+                        <label for="yes">Yes</label>
                     </div>
                     <div>
-                        <input name="secondary" value="flying" type="checkbox" id="flying">
-                        <label for="flying">Flying</label>
-                    </div>
-                    <div>
-                        <input name="secondary" value="poison" type="checkbox" id="poison">
-                        <label for="poison">Poison</label>
-                    </div>
-                    <div>
-                        <input name="secondary" value="fairy" type="checkbox" id="fairy">
-                        <label for="fairy">Fairy</label>
-                    </div>
-                    <div>
-                        <input name="secondary" value="bug" type="checkbox" id="bug">
-                        <label for="bug">Bug</label>
-                    </div>
-                    <div>
-                        <input name="secondary" value="dragon" type="checkbox" id="dragon">
-                        <label for="dragon">Dragon</label>
-                    </div>
-                    <div>
-                        <input name="secondary" value="ice" type="checkbox" id="ice">
-                        <label for="ice">Ice</label>
+                        <input type="radio" id="no" value="no" name="battle" required>
+                        <label for="no">No</label>
                     </div>
                 </fieldset>
-            </p>
-        </section>
-        <section>
-            <h2>Battles</h2>
-            <fieldset>
-                <legend>
-                    Has this pokemon been in a battle?
-                </legend>
-                <input type="radio" id="yes" value="yes" name="battle" required>
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" value="no" name="battle" required>
-                <label for="no">No</label>
-            </fieldset>
-            <label>If so, how many did it win?</label>
-            <input class="text-input" type="text" name="wins" id="wins">
-            <p>
-                <label>On a scale 1-5 how close is your pokemon to evolving?</label>
-                <input type="range" name="evolve" id="evolve" min="1" max="5" required>
-            </p>
-        </section>
+                <p>
+                    <label>If so, how many did it win?</label>
+                    <input class="text-input" type="text" name="wins" id="wins">
+                </p>
+                <p>
+                    <label>On a scale 1-5 how close is your pokemon to evolving?</label>
+                    <input type="range" name="evolve" id="evolve" min="1" max="5" required>
+                </p>
+            </section>
+            <section>
+                <h2 id="professor">Ready to Send to the Professor?</h2>
+                <button id="submit-button">ADD TO THE DEX</button>
+            </section>
+        </form>
     </main>
 </body>
 </html>

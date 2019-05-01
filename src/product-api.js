@@ -1,17 +1,21 @@
 const productApi = {
     save(product) {
+        //create an array
+        const products = [];
+        products.push(product);
         //serialize JSON
-        const json = JSON.stringify(product);
+        const json = JSON.stringify(products);
         //save to local storage
-        localStorage.setItem('product', json);
+        localStorage.setItem('products', json);
     },
     get() {
         //get from local storage
-        const json = localStorage.getItem('product');
+        const json = localStorage.getItem('products');
         //deserialize
-        const product = JSON.parse(json);
+        const products = JSON.parse(json);
         //return
         return product;
+        return products[0];
     }
 };
 

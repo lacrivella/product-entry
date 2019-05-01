@@ -1,5 +1,4 @@
 body {
-    text-align: left;
     background-color: rgb(245, 244, 244);
 }
 
@@ -16,6 +15,8 @@ dt, dd {
 }
 
 dt {
+    text-align: left;
     background-color:  #212A2F;
     opacity: .80;
+    padding-left: 40px;
 }

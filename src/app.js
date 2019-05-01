@@ -1,4 +1,5 @@
 import getPokedex from './get-pokedex.js';
+import productApi from './product-api.js';
 
 // selecting the correct nodes
 const pokedex = document.getElementById('pokedex-info');
@@ -7,7 +8,6 @@ const pokedex = document.getElementById('pokedex-info');
 pokedex.addEventListener('submit', (event) => {
     event.preventDefault();
     const pokedexData = new FormData(pokedex);
-
     const dex = getPokedex(pokedexData);
-    console.log(dex);
+    applicantApi.save(applicant);
 });

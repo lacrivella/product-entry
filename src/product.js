@@ -13,6 +13,7 @@ const evolving = document.getElementById('evolving');
 
 //get our applicant from our api
 const product = productApi.get();
+console.log('product', product.description);
 
 //no applicant? head back to the homepage
 

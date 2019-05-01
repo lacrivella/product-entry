@@ -8,6 +8,7 @@ function getPokedex(pokedexData) {
     const product = {
         name: pokedexData.get('name'),
         nickname: pokedexData.get('nickname'),
+        description: pokedexData.get('description'),
         primary: pokedexData.get('primary'),
         secondary: pokedexData.getAll('secondary'),
         hasBattle: hasBattle,

@@ -8,6 +8,7 @@ test('create product from data', function(assert) {
     const expected = {
         name: 'Pikachu',
         nickname: 'Pika',
+        description: 'Yellow',
         primary: 'Fire',
         secondary: ['ghost'],
         hasBattle: true,
@@ -18,6 +19,7 @@ test('create product from data', function(assert) {
     const pokedexData = new FormData();
     pokedexData.set('name', expected.name);
     pokedexData.set('nickname', expected.nickname);
+    pokedexData.set('description', expected.description);
     pokedexData.set('primary', expected.primary);
     pokedexData.set('secondary', expected.secondary);
     pokedexData.set('battle', 'yes');

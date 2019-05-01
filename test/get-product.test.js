@@ -1,7 +1,8 @@
 import getPokedex from '../src/get-pokedex.js';
 const test = QUnit.test;
+QUnit.module('product created');
 
-test('create applicant from data', function(assert) {
+test('create product from data', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const expected = {
@@ -25,7 +26,7 @@ test('create applicant from data', function(assert) {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const applicant = getPokedex(pokedexData);
+    const product = getPokedex(pokedexData);
     //Assert
-    assert.deepEqual(applicant, expected);
+    assert.deepEqual(product, expected);
 });

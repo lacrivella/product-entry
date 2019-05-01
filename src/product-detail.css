@@ -7,16 +7,20 @@ dl {
     background-size: cover;
     padding: 45px;
     display: grid;
-    grid-template-columns: max-content 1fr;
+   
 }
 
 dt, dd {
     display: inline-block;
+    /* text-align: center; */
+    background-color:  #212A2F;
+    opacity: .80;
+    padding-left: 40px;
 }
 
 dt {
     text-align: left;
-    background-color:  #212A2F;
+    background-color:  #0E6B78;
     opacity: .80;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }

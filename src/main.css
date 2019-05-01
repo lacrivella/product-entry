@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Russo+One');
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auot;
+    text-align: center;
+    background-color: #96362F;
+    color: rgb(245, 244, 244);
+}
+
+#pokedex-info {
+    /* background-color: #212A2F;
+    opacity: .70; */
+    padding: 30px 40px;
+}
+
+.pokedex-wrapper {
+    background-image: url('../assets/redbackground.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    font-family: 'Russo One', sans-serif;
+    color: #F7AC49;
+}
+
+h2 {
+    font-size: 2.75em;
+    padding: 5px; 
+    margin-top: -10px;
+    margin-bottom: -5px;
+    opacity: 1;
+}
+
+fieldset {
+    display: inline-block;
+    text-align: left;
+    background-color: #212A2F;
+    opacity: .75;
+}
+
+#description {
+    height: 200px;
+    width: 300px;
+}
+
+#submit-button {
+    height: 125px;
+    width: 300px;
+    font-size: 2em;
+    color: rgb(245, 244, 244);
+    border: solid 2.5px rgb(245, 244, 244);
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 1px 2px #212A2F;
+    background-image: radial-gradient(circle, #0BA0A7, #0E6B78);
+}

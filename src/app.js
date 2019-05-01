@@ -8,6 +8,6 @@ const pokedex = document.getElementById('pokedex-info');
 pokedex.addEventListener('submit', (event) => {
     event.preventDefault();
     const pokedexData = new FormData(pokedex);
-    const dex = getPokedex(pokedexData);
-    applicantApi.save(applicant);
+    const product = getPokedex(pokedexData);
+    productApi.save(product);
 });

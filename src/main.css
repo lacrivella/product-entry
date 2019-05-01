@@ -60,3 +60,17 @@ fieldset {
     text-shadow: 1px 2px #212A2F;
     background-image: radial-gradient(circle, #0BA0A7, #0E6B78);
 }
+
+a {
+    color: #0BA0A7;
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    color: #0E6B78
+}
+
+ul {
+    list-style-type: none;
+    
+}

@@ -10,4 +10,5 @@ pokedex.addEventListener('submit', (event) => {
     const pokedexData = new FormData(pokedex);
     const product = getPokedex(pokedexData);
     productApi.save(product);
+    window.location.href = 'thank-you.html';
 });

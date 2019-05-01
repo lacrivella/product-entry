@@ -1,0 +1,21 @@
+body {
+    text-align: left;
+    background-color: rgb(245, 244, 244);
+}
+
+dl {
+    background-image: url(/assets/redbackground.jpg);
+    background-size: cover;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+dt, dd {
+    display: inline-block;
+}
+
+dt {
+    background-color:  #212A2F;
+    opacity: .80;
+}

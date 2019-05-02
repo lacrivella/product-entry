@@ -61,8 +61,10 @@ fieldset {
 }
 
 a {
+    font-family: 'Russo One', sans-serif;
     color: #0BA0A7;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
 a:hover, a:visited {
@@ -71,5 +73,4 @@ a:hover, a:visited {
 
 ul {
     list-style-type: none;
-
 }

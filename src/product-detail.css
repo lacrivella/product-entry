@@ -3,7 +3,7 @@ dl {
     background-size: cover;
     padding: 45px;
     display: grid;
-    opacity: .80;
+    opacity: .90;
    
 }
 
@@ -21,23 +21,27 @@ dt {
     height: auto;
     width: auto;
 }
-/* trying to make dt and dd inline */
-dl.inline-flex {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    width: 300px;      /* set the container width*/
-    overflow: visible;
-  }
-  dl.inline-flex dt {
-    flex: 0 0 50%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  dl.inline-flex dd {
-    flex:0 0 50%;
-    margin-left: auto;
-    text-align: left;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 20px;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+dt {
+    background-image: radial-gradient(circle, #0BA0A7, #0E6B78);
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    text-align: right;
+    padding-left: 30px;
+    font-size: .95em;
+}
+
+dd {
+    margin-left: 0px;
+    color: #F7AC49;
+}

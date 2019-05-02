@@ -1,11 +1,7 @@
-body{
-    
-    background-image: url('../assets/redbackground.jpg');
-    background-size: cover;
-}
 
 h1 {
     text-shadow: #96362F 2px 2px;
+    font-size: 2.75em;
 }
 
 table {
@@ -14,8 +10,10 @@ table {
     margin: auto;
     border-collapse: collapse;
     border-spacing: 5em;
+    border: solid 2px #212A2F;
     background-color: rgb(245, 244, 244);
     color: #212A2F;
+    opacity: .90;
 }
 
 thead {
@@ -23,11 +21,11 @@ thead {
     font-family: 'Russo One', sans-serif;
     color: rgb(245, 244, 244);
     font-size: 1.2em;
-    background-color: #212A2F;
+    background-image: radial-gradient(circle, #0BA0A7, #0E6B78);
 }
 
 tbody tr:nth-child(even) {
-    background: #929395;
+    background: #cececf;
 }
 
 td {

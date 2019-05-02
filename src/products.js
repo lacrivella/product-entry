@@ -2,17 +2,15 @@
 import productApi from './product-api.js';
 
 // reference the table body DOM element
-// Get the applicants from the API object
-
-// Loop the list of applicants
 const tbody = document.getElementById('products');
 
 const products = productApi.getAll();
 
+// For each applicant, construct a table row and append to the table body
+// Loop the list of applicants
 for(let i = 0; i < products.length; i++) {
     const product = products[i];
-
-// For each applicant, construct a table row and append to the table body
+    
     const tr = document.createElement('tr');
 
     const nameCell = document.createElement('td');

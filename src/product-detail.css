@@ -1,26 +1,43 @@
-body {
-    background-color: rgb(245, 244, 244);
-}
-
 dl {
-    background-image: url(/assets/redbackground.jpg);
+    background-color: rgb(245, 244, 244);
     background-size: cover;
     padding: 45px;
     display: grid;
+    opacity: .80;
    
 }
 
 dt, dd {
     display: inline-block;
-    /* text-align: center; */
     background-color:  #212A2F;
-    opacity: .80;
     padding-left: 40px;
 }
 
 dt {
     text-align: left;
     background-color:  #0E6B78;
-    opacity: .80;
-    /* padding-left: 40px; */
 }
+#description {
+    height: auto;
+    width: auto;
+}
+/* trying to make dt and dd inline */
+dl.inline-flex {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 300px;      /* set the container width*/
+    overflow: visible;
+  }
+  dl.inline-flex dt {
+    flex: 0 0 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  dl.inline-flex dd {
+    flex:0 0 50%;
+    margin-left: auto;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }

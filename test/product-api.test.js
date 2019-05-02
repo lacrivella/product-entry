@@ -17,12 +17,12 @@ test('creates round-trip product', (assert) => {
     assert.deepEqual(result, product);
 });
 
-// test('', (assert) => {
-//     // arrange
-//     localStorage.removeItem('products');
-//     const expected = [];
-//     //act
-//     const products = productApi.getAll();
-//     //assert
-//     assert.deepEqual(products, expected);
-// });
+test('no products in local storage, return empty arrays', (assert) => {
+    // arrange
+    localStorage.removeItem('products');
+    const expected = [];
+    //act
+    const products = productApi.getAll();
+    //assert
+    assert.deepEqual(products, expected);
+});

@@ -14,7 +14,11 @@ const productApi = {
         //deserialize
         const products = JSON.parse(json);
         //return
+        // tomorrow we will find the right one
         return products[0];
+    },
+    getAll() {
+        return [];
     }
 };
 

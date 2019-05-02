@@ -1,0 +1,33 @@
+body{
+    background-color: #212A2F;
+}
+
+h1 {
+    text-shadow: #96362F 2px 2px;
+}
+
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 5em;
+    background-color: rgb(245, 244, 244);
+    color: #212A2F;
+}
+
+thead {
+    font-weight: bolder;
+    font-family: 'Russo One', sans-serif;
+    color: rgb(245, 244, 244);
+    font-size: 1.2em;
+    background-image: url(/assets/redbackground.jpg);
+}
+
+tbody tr:nth-child(even) {
+    background: #929395;
+}
+
+td {
+    padding: 10px 10px;
+}

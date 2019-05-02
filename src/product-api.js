@@ -15,7 +15,7 @@ const productApi = {
         const products = productApi.getAll();
         // return
         // tomorrow we will find the right one
-        return products[0];
+        return products[products.length - 1];
     },
     getAll() {
         // get from local storage

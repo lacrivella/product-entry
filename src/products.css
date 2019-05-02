@@ -1,5 +1,7 @@
 body{
-    background-color: #212A2F;
+    
+    background-image: url('../assets/redbackground.jpg');
+    background-size: cover;
 }
 
 h1 {
@@ -21,7 +23,7 @@ thead {
     font-family: 'Russo One', sans-serif;
     color: rgb(245, 244, 244);
     font-size: 1.2em;
-    background-image: url(/assets/redbackground.jpg);
+    background-color: #212A2F;
 }
 
 tbody tr:nth-child(even) {

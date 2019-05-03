@@ -12,8 +12,10 @@ const evolving = document.getElementById('evolving');
 
 // get the pokemon/product nickname
 const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('nickname');
+
 // get our applicant from our api
-const product = productApi.get();
+const product = productApi.get(id);
 
 // mediate data into the elements
 name.textContent = product.name;

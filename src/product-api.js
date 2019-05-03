@@ -10,12 +10,16 @@ const productApi = {
         // save to local storage
         productApi.storage.setItem('products', json);
     },
-    get() {
+    get(nickname) {
         // use get all to fetch applicats
         const products = productApi.getAll();
-        // return
-        // tomorrow we will find the right one
-        return products[products.length - 1];
+        
+        for(let i = 0; i < products.length; i++) {
+            const product = products[i];
+            if(product.nickname === nickname) {
+                return product;
+            }
+        }
     },
     getAll() {
         // get from local storage

@@ -10,15 +10,17 @@ test('creates round-trip product', (assert) => {
     testStorage.removeItem('products');
     // Arrange
     // Set up your paramenters and expectations
-    const product = { name: 'Bob' };
+    const product1 = { nickname: 'pokemon1' };
+    const product2 = { nickname: 'pokemon2' };
 
      // Act
     // Call the function you're testing and set the result to a const
-    productApi.save(product);
-    const result = productApi.get();
+    productApi.save(product1);
+    productApi.save(product2);
+    const result = productApi.get(product2.nickname);
     
     // Assert
-    assert.deepEqual(result, product);
+    assert.deepEqual(result, product2);
 });
 
 test('no products in local storage, return empty arrays', (assert) => {

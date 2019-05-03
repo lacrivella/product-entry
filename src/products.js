@@ -27,9 +27,9 @@ for(let i = 0; i < products.length; i++) {
     // create search param object
     const searchParams = new URLSearchParams();
     // set the nickname key with the products nickname value to avoid errord with duplicant pokemon names
-    searchParams.get('nickname', product.nickname);
+    searchParams.set('nickname', product.nickname);
     // use search string to make end of link href
-    link.href = 'product-detail.html?nickname' + searchParams.toString();
+    link.href = 'product-detail.html?' + searchParams.toString();
 
     // use pokemon's nickname to display text for the link
     link.textContent = product.nickname;

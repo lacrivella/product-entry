@@ -11,6 +11,8 @@ const products = productApi.getAll();
 for(let i = 0; i < products.length; i++) {
     const product = products[i];
     
+    // input: applicant
+
     const tr = document.createElement('tr');
 
     const nameCell = document.createElement('td');
@@ -18,7 +20,10 @@ for(let i = 0; i < products.length; i++) {
     tr.appendChild(nameCell);
 
     const nicknameCell = document.createElement('td');
-    nicknameCell.textContent = product.nickname;
+    const link = document.createElement('a');
+    link.href = 'product-detail.html?nickname' + product.nickname;
+    link.textContent = product.nickname;
+    nicknameCell.appendChild(link);
     tr.appendChild(nicknameCell);
 
     const primaryCell = document.createElement('td');
@@ -40,6 +45,8 @@ for(let i = 0; i < products.length; i++) {
     const evolvingCell = document.createElement('td');
     evolvingCell.textContent = product.evolving;
     tr.appendChild(evolvingCell);
+
+    // output: tr
 
     tbody.appendChild(tr);
 }

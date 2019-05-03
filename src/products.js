@@ -7,23 +7,35 @@ const tbody = document.getElementById('products');
 const products = productApi.getAll();
 
 // For each applicant, construct a table row and append to the table body
-// Loop the list of applicants
+// Loop the list of pokemons/products
 for(let i = 0; i < products.length; i++) {
     const product = products[i];
     
-    // input: applicant
+    // input: pokemon aka produc
 
     const tr = document.createElement('tr');
 
     const nameCell = document.createElement('td');
     nameCell.textContent = product.name;
     tr.appendChild(nameCell);
-
+    
+    // create the table cell
     const nicknameCell = document.createElement('td');
+    // create the anchor link
     const link = document.createElement('a');
-    link.href = 'product-detail.html?nickname' + product.nickname;
+
+    // create search param object
+    const searchParams = new URLSearchParams();
+    // set the nickname key with the products nickname value to avoid errord with duplicant pokemon names
+    searchParams.get('nickname', product.nickname);
+    // use search string to make end of link href
+    link.href = 'product-detail.html?nickname' + searchParams.toString();
+
+    // use pokemon's nickname to display text for the link
     link.textContent = product.nickname;
+    // add link to the nickname cell
     nicknameCell.appendChild(link);
+    // add nickname to cell to table
     tr.appendChild(nicknameCell);
 
     const primaryCell = document.createElement('td');

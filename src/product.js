@@ -10,10 +10,12 @@ const secondary = document.getElementById('secondary');
 const wins = document.getElementById('wins');
 const evolving = document.getElementById('evolving');
 
-//get our applicant from our api
+// get the pokemon/product nickname
+const searchParams = new URLSearchParams(window.location.search);
+// get our applicant from our api
 const product = productApi.get();
 
-//mediate data into the elements
+// mediate data into the elements
 name.textContent = product.name;
 nickname.textContent = product.nickname;
 description.textContent = product.description;

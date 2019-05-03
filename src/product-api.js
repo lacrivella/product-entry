@@ -1,5 +1,5 @@
 const productApi = {
-    storage: localStorage,
+    key: 'products',
     save(product) {
         // create an array
         const products = productApi.getAll();
@@ -8,7 +8,7 @@ const productApi = {
         // serialize JSON
         const json = JSON.stringify(products);
         // save to local storage
-        productApi.storage.setItem('products', json);
+        localStorage.setItem(productApi.key, json);
     },
     get(nickname) {
         // use get all to fetch applicats
@@ -23,7 +23,7 @@ const productApi = {
     },
     getAll() {
         // get from local storage
-        const json = productApi.storage.getItem('products');
+        const json = localStorage.getItem(productApi.key);
         // deserialize
         let products = JSON.parse(json);
         if(!products) {

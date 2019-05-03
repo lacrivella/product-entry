@@ -12,19 +12,18 @@
         <form id="pokedex-info">
             <section>
                 <h2>About Your Pokemon</h2>
-                <p>
+                <section>
                     <label for="name">Pokemon Name:</label>
                     <input type="text" name="name" id="name" placeholder="pokemon name" required>
-                </p>
                 <p>
                     <label for="nickname">Pokemon Nickname:</label>
                     <input type="text" name="nickname" id="nickname" placeholder="pokemon's nickname">
                 </p>
                 <p>
                     <label for="description">Brief Description of Pokemon:</label>
-                    <p>
+                </p>
+                <p>
                     <textarea name="description" id="description" placeholder="describe height, weight, and features"></textarea>
-                    </p>
                 </p>
             </section>
             <section>
@@ -73,21 +72,25 @@
                             <input name="secondary" value="ice" type="checkbox" id="ice">
                             <label for="ice">Ice</label>
                         </div>
+                        <div>
+                            <input name="secondary" value="none" type="checkbox" id="none">
+                            <label for="none">None</label>
+                        </div>
                     </fieldset>
                 </p>
             </section>
             <section>
                 <h2>Battles</h2>
-                <fieldset id="battlefield">
+                <fieldset>
                     <legend>
                         Has this pokemon been in a battle?
                     </legend>
                     <div>
-                        <input type="radio" id="yes" value="yes" name="battle" required>
+                        <input type="radio" id="yes" value="yes" name="battle">
                         <label for="yes">Yes</label>
                     </div>
                     <div>
-                        <input type="radio" id="no" value="no" name="battle" required>
+                        <input type="radio" id="no" value="no" name="battle">
                         <label for="no">No</label>
                     </div>
                 </fieldset>

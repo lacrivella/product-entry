@@ -9,7 +9,8 @@ const { window } = new JSDOM(``, {
 global.window = window;
 global.document = window.document;
 global.FormData = window.FormData;
-// global.localStorage = window.localStorage;
+global.localStorage = window.localStorage;
+global.sessionStorage = window.sessionStorage;
 
 require = require('esm')(module);
 module.exports = require('./tests.js');

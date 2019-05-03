@@ -4,10 +4,9 @@ const test = QUnit.test;
 QUnit.module('product api');
 
 productApi.key = 'test-products';
-// const testStorage = sessionStorage; delete later
 
 test('creates round-trip product', (assert) => {
-    localStorage.removeItem('products');
+    localStorage.removeItem('test-products');
     // Arrange
     // Set up your paramenters and expectations
     const product1 = { nickname: 'pokemon1' };
@@ -25,7 +24,7 @@ test('creates round-trip product', (assert) => {
 
 test('no products in local storage, return empty arrays', (assert) => {
     // arrange
-    localStorage.removeItem('products');
+    localStorage.removeItem('test-products');
     const expected = [];
     // act
     const products = productApi.getAll();
@@ -34,7 +33,7 @@ test('no products in local storage, return empty arrays', (assert) => {
 });
 
 test('two saves return arrays with two items', (assert) => {
-    localStorage.removeItem('products');
+    localStorage.removeItem('test-products');
 
     // arrange
     const product1 = { name: 'test1' };

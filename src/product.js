@@ -7,7 +7,6 @@ const nickname = document.getElementById('nickname');
 const description = document.getElementById('description');
 const primary = document.getElementById('primary');
 const secondary = document.getElementById('secondary');
-const battle = document.getElementById('battle');
 const wins = document.getElementById('wins');
 const evolving = document.getElementById('evolving');
 
@@ -20,6 +19,5 @@ nickname.textContent = product.nickname;
 description.textContent = product.description;
 primary.textContent = product.primary;
 secondary.textContent = product.secondary;
-battle.textContent = product.battle;
 wins.textContent = product.wins;
 evolving.textContent = product.evolving;

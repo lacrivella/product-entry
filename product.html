@@ -28,7 +28,7 @@
             </section>
             <section>
                 <h2>Pokemon Type</h2>
-                <p>
+                <article>
                     <label>Primary Type</label>
                     <select id="primary" name="primary" required>
                         <option value="" hidden disabled selected>select a primary type</option>
@@ -40,8 +40,8 @@
                         <option value="normal">Normal</option>
                         <option value="rock">Rock</option>
                     </select>
-                </p>
-                <p>
+                </article>
+                <section>
                     <fieldset>
                         <legend>Secondary types</legend>
                         <div>
@@ -77,7 +77,7 @@
                             <label for="none">None</label>
                         </div>
                     </fieldset>
-                </p>
+                </section>
             </section>
             <section>
                 <h2>Battles</h2>
@@ -94,14 +94,14 @@
                         <label for="no">No</label>
                     </div>
                 </fieldset>
-                <p>
+                <div>
                     <label>If so, how many did it win?</label>
                     <input class="text-input" type="text" name="wins" id="wins">
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="evolving">On a scale 1-5 how close is your pokemon to evolving?</label>
                     <input type="range" name="evolving" id="evolving" min="1" max="5" required>
-                </p>
+                </div>
             </section>
             <section>
                 <h2 id="professor">Ready to Send to the Professor?</h2>

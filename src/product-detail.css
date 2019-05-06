@@ -1,0 +1,47 @@
+dl {
+    background-color: rgb(245, 244, 244);
+    background-size: cover;
+    padding: 45px;
+    display: grid;
+    opacity: .90;
+   
+}
+
+dt, dd {
+    display: inline-block;
+    background-color:  #212A2F;
+    padding-left: 40px;
+}
+
+dt {
+    text-align: left;
+    background-color:  #0E6B78;
+}
+#description {
+    height: auto;
+    width: auto;
+}
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    padding: 20px;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+dt {
+    background-image: radial-gradient(circle, #0BA0A7, #0E6B78);
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    text-align: right;
+    padding-left: 30px;
+    font-size: .95em;
+}
+
+dd {
+    margin-left: 0px;
+    color: #F7AC49;
+}

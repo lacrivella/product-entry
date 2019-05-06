@@ -6,15 +6,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auot;
     text-align: center;
+    background-image: url('../assets/redbackground.jpg');
+    background-size: cover;
     background-color: #96362F;
     color: rgb(245, 244, 244);
 }
 
 #pokedex-info {
-    /* background-color: #212A2F;
-    opacity: .70; */
     padding: 30px 40px;
 }
 
@@ -27,11 +26,11 @@ body {
 
 h1, h2 {
     font-family: 'Russo One', sans-serif;
+    font-size: 2.75em;
     color: #F7AC49;
 }
 
 h2 {
-    font-size: 2.75em;
     padding: 5px; 
     margin-top: -10px;
     margin-bottom: -5px;
@@ -46,8 +45,8 @@ fieldset {
 }
 
 #description {
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 200px;
 }
 
 #submit-button {
@@ -59,4 +58,19 @@ fieldset {
     font-family: 'Inconsolata', monospace;
     text-shadow: 1px 2px #212A2F;
     background-image: radial-gradient(circle, #0BA0A7, #0E6B78);
+}
+
+a {
+    font-family: 'Russo One', sans-serif;
+    color: #0BA0A7;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover, a:visited {
+    color: #0E6B78
+}
+
+ul {
+    list-style-type: none;
 }

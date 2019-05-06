@@ -5,9 +5,10 @@ function getPokedex(pokedexData) {
     const evolving = parseInt(pokedexData.get('evolving'));
 
     //object variables
-    const applicant = {
+    const product = {
         name: pokedexData.get('name'),
         nickname: pokedexData.get('nickname'),
+        description: pokedexData.get('description'),
         primary: pokedexData.get('primary'),
         secondary: pokedexData.getAll('secondary'),
         hasBattle: hasBattle,
@@ -15,6 +16,6 @@ function getPokedex(pokedexData) {
         evolving: evolving 
     };
 
-    return applicant;
+    return product;
 }
 export default getPokedex;
